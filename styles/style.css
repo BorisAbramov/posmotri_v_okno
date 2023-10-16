@@ -9,6 +9,7 @@ html {
 }
 
 .page {
+  display: flex;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -52,18 +53,19 @@ fieldset {
 }
 
 .content {
-  margin: 0 auto;
+  margin: auto;
   display: flex;
-  padding-top: 133px;
-  padding-bottom: 133px;
+  /* padding-top: 133px;
+  padding-bottom: 133px; */
   flex-direction: row;
-  column-gap: 27px;
-  inline-size: 100%;
+  column-gap: 30px;
+  /* inline-size: 100%; */
+  max-width: 1140px;
 }
 /* левая колонка */
 .result {
   align-self: end;
-  padding-top: 75px;
+  /* padding-top: 75px; */
 }
 
 .result__video {
@@ -89,24 +91,25 @@ fieldset {
 .search-form__fieldset-title {
   margin-bottom: 5px;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  /* font-family: 'Fira Sans Condensed', sans-serif; */
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
-  line-height: normal;
+  /* line-height: normal; */
 }
 
 .search-form__label {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   cursor: pointer;
+  width: fit-content;
 }
 
-.search-form__label:hover:not(:only-of-type) {
+.search-form__label:hover {
   text-decoration: underline;
 }
 
-.search-form__label:active:not(:only-of-type) {
+.search-form__label:active {
   text-decoration: none;
 }
 
@@ -125,7 +128,7 @@ fieldset {
   border: none;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
-  color: rgba(255, 255, 255, 0.7);
+  /* color: rgba(255, 255, 255, 0.7); */
   font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -176,11 +179,6 @@ fieldset {
   block-size: 319px;
 }
 
-.content__details {
-  inline-size: 100%;
-  block-size: 100%;
-}
-
 .content__list-item {
   padding-top: 25px;
 }
@@ -226,12 +224,6 @@ fieldset {
 
 .content__accent {
   color: #545050;
-  font-family: 'Oswald', sans-serif;
-  font-weight: 700;
-  font-size: 75px;
-  font-style: normal;
-  line-height: 94%;
-  text-transform: uppercase;
 }
 
 .content__card-link {
@@ -247,6 +239,7 @@ fieldset {
 
 .content__card-link:hover {
   text-decoration: underline;
+  text-underline-offset: 5px;
 }
 
 .content__card-link:active {
@@ -284,7 +277,6 @@ fieldset {
   font-size: 18px;
   font-style: normal;
   line-height: normal;
-  text-align: center;
   text-align: center;
   background-color: transparent;
   cursor: pointer;
